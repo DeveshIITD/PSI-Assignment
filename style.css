@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:  border-box;
+    ;
+}
+.container{
+    width: 100%;
+    min-height:100 vh;
+    background: linear-gradient(135deg, #d5d5d5, #585658);
+    padding: 10px;
+}
+button{
+    
+    border:  bisque;
+    
+    outline: none;
+    
+    padding: 8px 20px;
+    
+    background: #ff5945;
+    
+    color: #fff;
+    
+    font-size: 16px;
+    
+    cursor: pointer;
+    
+    border-radius: 200px;
+}

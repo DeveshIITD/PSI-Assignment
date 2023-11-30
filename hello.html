@@ -1,0 +1,38 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Debugging and Feature Enhancement Assignment</title>
+   
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ <div class="container"> 
+   
+   <form id="userForm">
+     <label for="userName">User Name:</label>
+     <input type="text" id="userName" name="userName">
+     <button type="button" id="addUserBtn">Add User</button>
+     <button type="button" id="searchUsersBtn">Search User</button>
+   </form>
+ 
+   <h1>User List</h1>
+   <div id="usersList"></div>
+ 
+   <script src="./app.js"></script>
+   <script>
+     // Add event listeners in the JavaScript file instead of inline
+     document.getElementById('addUserBtn').addEventListener('click', addUser);
+     document.getElementById('searchUsersBtn').addEventListener('click', searchUsers);
+ 
+     // Fetch and display users on page load
+     fetchUsers((fetchedUsers) => {
+       users = fetchedUsers;
+       displayUsers(users);
+     });
+   </script>
+ </div>
+ </body>
+ </html>
+ 
